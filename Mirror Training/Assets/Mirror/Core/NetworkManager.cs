@@ -164,6 +164,7 @@ namespace Mirror
         //    during FinishLoadScene.
         public NetworkManagerMode mode { get; private set; }
 
+
         // virtual so that inheriting classes' OnValidate() can call base.OnValidate() too
         public virtual void OnValidate()
         {
@@ -1375,6 +1376,7 @@ namespace Mirror
             // => appending the connectionId is WAY more useful for debugging!
             player.name = $"{playerPrefab.name} [connId={conn.connectionId}]";
             NetworkServer.AddPlayerForConnection(conn, player);
+
         }
 
         /// <summary>Called on server when transport raises an exception. NetworkConnection may be null.</summary>
@@ -1456,6 +1458,7 @@ namespace Mirror
 
         /// <summary>This is called when a host is stopped.</summary>
         public virtual void OnStopHost() { }
+
 
         // keep OnGUI even in builds. useful to debug snap interp.
         void OnGUI()

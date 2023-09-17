@@ -32,6 +32,11 @@ public class PlayerBaseState
 
     }
 
+    public virtual void LateUpdate()
+    {
+
+    }
+
     public virtual void Exit()
     {
 

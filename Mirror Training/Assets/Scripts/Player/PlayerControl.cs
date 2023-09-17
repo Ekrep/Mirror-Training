@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
+
+
 public class PlayerControl : NetworkBehaviour
 {
     [SerializeField]
@@ -21,6 +23,7 @@ public class PlayerControl : NetworkBehaviour
     }
     void Start()
     {
+
 
     }
 
